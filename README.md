@@ -1,141 +1,132 @@
 # 🚀 Normad App
 
-Normad is a transparent payment infrastructure for artists built on blockchain.
+> Transparent Payments for Artists — Powered by Stellar
 
-Too often, artists are underpaid, paid late, or lack visibility into how their revenue is calculated. Normad solves this problem by leveraging the Stellar blockchain to provide transparent, automated, and verifiable payments.
+Normad is a blockchain-powered payment infrastructure that ensures artists are paid fairly, transparently, and automatically.
 
-With Normad, every payment is traceable. Every split is verifiable. Every artist gets clarity.
-
----
-
-## 🌍 The Problem
-
-Artists across creative industries struggle with:
-
-- Opaque revenue reporting
-- Delayed payouts
-- Hidden platform fees
-- No real-time tracking
-- No ownership of financial data
-
-Platforms control the numbers. Artists are left guessing.
+Built for creatives who are tired of guessing where their money went.
 
 ---
 
-## 💡 The Solution
+## 🏆 Hackathon Submission
 
-Normad introduces:
+Normad solves one of the biggest problems in the creative economy:
 
-- 🔎 On-chain revenue transparency
-- ⚡ Automated smart contract payouts
-- 💰 Direct wallet payments
-- 📊 Real-time dashboard tracking
-- 🔐 Immutable transaction records
+**Lack of payment transparency.**
 
-All payments are processed through smart contracts on the Stellar network, ensuring fairness and transparency.
+Artists often:
+- Don't know how revenue is calculated
+- Experience delayed payouts
+- Cannot verify platform fees
+- Have no real-time visibility into earnings
+
+Normad fixes this using on-chain payment distribution on the Stellar network.
+
+---
+
+## 💡 What Makes Normad Different?
+
+✅ On-chain revenue splits  
+✅ Automated smart contract payouts  
+✅ Real-time earnings dashboard  
+✅ Immutable payment history  
+✅ Wallet-to-wallet payments  
+
+Every transaction is verifiable.
+
+No hidden fees.
+No opaque reporting.
+
+---
+
+## ⚙️ How It Works
+
+1. A platform generates revenue.
+2. Revenue is sent to the Normad smart contract.
+3. The contract distributes funds based on predefined splits.
+4. Artists receive funds directly in their Stellar wallets.
+5. All transactions are permanently recorded on-chain.
 
 ---
 
 ## 🏗️ Architecture
 
-Normad is a fullstack Web3 application consisting of:
-
-### 1️⃣ Frontend
-
-Built with:
-
+### 🔹 Frontend
 - React (Vite)
+- TailwindCSS
+- shadcn/ui
+- Wallet integration
+- Artist dashboard
+
+### 🔹 Backend
+- Node.js
+- REST API
+- Authentication (JWT)
+- Smart contract interaction
+- Transaction indexing
+
+### 🔹 Smart Contract
+- Built on Stellar
+- Soroban smart contracts
+- Automated revenue distribution
+- Transparent split logic
+
+---
+
+## 🛠️ Tech Stack
+
+Frontend:
+- React + Vite
 - TailwindCSS
 - shadcn/ui
 - TypeScript
 
-Features:
-
-- Artist dashboard
-- Revenue overview
-- Payment history
-- Wallet connection
-- Transaction verification
-
----
-
-### 2️⃣ Backend
-
-Built with:
-
+Backend:
 - Node.js
-- REST API
-- JWT Authentication
 - PostgreSQL / MongoDB
 
-Responsibilities:
-
-- User authentication
-- Revenue data aggregation
-- Smart contract interaction
-- Transaction indexing
-- Role-based access (Artist / Platform)
-
----
-
-### 3️⃣ Smart Contract (Stellar Soroban)
-
-Built on Stellar using Soroban smart contracts.
-
-Responsibilities:
-
-- Revenue split logic
-- Automated artist payouts
-- On-chain transparency
-- Immutable transaction records
-
----
-
-## 🔄 How It Works
-
-1. A platform generates revenue.
-2. Payment is routed through Normad’s smart contract.
-3. The contract distributes funds based on predefined splits.
-4. Artists receive funds directly into their wallets.
-5. All transactions are permanently recorded on-chain.
+Blockchain:
+- Stellar Network
+- Soroban Smart Contracts
 
 ---
 
 ## 📦 Project Structure
 
 normad-app/
-│
-├── frontend/        # React + Vite application
-├── backend/         # Node.js API
-├── contract/        # Stellar Soroban smart contract
+├── frontend/
+├── backend/
+├── contract/
 └── README.md
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Running Locally
 
-### Frontend
-- React (Vite)
-- TailwindCSS
-- shadcn/ui
-- TypeScript
-
-### Backend
-- Node.js
-- REST API
-- PostgreSQL / MongoDB
-- JWT Authentication
-
-### Blockchain
-- Stellar Network
-- Soroban Smart Contracts
-
----
-
-## ⚙️ Installation
-
-### 1️⃣ Clone the Repository
+### Clone Repo
 
 ```bash
 git clone https://github.com/your-username/normad-app.git
 cd normad-app
+
+Frontend
+cd frontend
+npm install
+npm run dev
+Backend
+cd backend
+npm install
+npm run dev
+Contract
+cd contract
+# build & deploy using Soroban CLI
+
+
+# Blockchain
+VITE_STELLAR_RPC_URL=
+VITE_CONTRACT_ADDRESS=
+
+# Backend
+DATABASE_URL=
+JWT_SECRET=
+STELLAR_SECRET_KEY=
